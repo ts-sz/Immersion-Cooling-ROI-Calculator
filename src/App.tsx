@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Droplets } from 'lucide-react';
 import { InputSection } from '@/components/calculator/InputSection';
 import { ResultsCard } from '@/components/calculator/ResultsCard';
 import { CostChart } from '@/components/calculator/CostChart';
@@ -28,11 +27,18 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-4 md:p-8">
       <Card className="max-w-6xl mx-auto bg-gray-800 text-white border-gray-700">
         <CardHeader className="border-b border-gray-700">
-          <div className="flex items-center gap-3">
-            <Droplets className="h-8 w-8 text-blue-500" />
-            <CardTitle className="text-2xl bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-              Immersion Cooling ROI Calculator
-            </CardTitle>
+          <div className="flex items-center gap-4">
+            <img 
+              src="https://logos-strat-zone.surge.sh/logo_only.png" 
+              alt="Strategic Zone Logo" 
+              className="h-12 w-12 object-contain"
+            />
+            <div>
+              <CardTitle className="text-2xl bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                Immersion Cooling ROI Calculator
+              </CardTitle>
+              <p className="text-sm text-gray-400">by Strategic Zone</p>
+            </div>
           </div>
         </CardHeader>
         <CardContent className="p-4 md:p-6">
