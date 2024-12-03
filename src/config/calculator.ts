@@ -12,7 +12,7 @@ export const defaultInputs = {
   pueImmersion: 1.03,
   gpuEfficiencyGain: 0.85,
   heatTransfer: 0.8,
-  tankCost: 18000,
+  tankCost: 85000,
   liquidCost: 1200,
   serverConversion: 150,
   externalCircuit: 4000,
